@@ -1,4 +1,6 @@
-/* google fonts */
+/*--------------
+  google fonts
+ -------------- */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 /*-----------------------------------------------
@@ -16,7 +18,9 @@ header {
   height: 450px;
 }
 
-/* banner area */
+/*--------------------
+      banner area 
+ ---------------------*/
 
 .bannar-area {
   display: flex;
@@ -65,13 +69,16 @@ header {
   color: orange;
 }
 
-/* All players style */
+/* ---------------------
+    All players style 
+------------------------*/
 
 .players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-left: 40px;
+  margin-left: 100px;
   margin-top: 70px;
+  width: 65em;
 }
 
 .player img {
@@ -96,7 +103,9 @@ header {
   padding-bottom: 40px;
 }
 
-/* Football match area's style */
+/*------------------------------
+   Football match area's style 
+ -------------------------------*/
 .football-match-area {
   height: 800px;
   width: 1000px;
@@ -126,8 +135,62 @@ header {
   font-weight: bold;
   border-radius: 5px;
 }
+/*---------------------------------------
+      copa ameria video teaser area  
+ ----------------------------------------*/
+.video-teaser-area {
+  margin-bottom: 150px;
+}
+.video-teaser video {
+  width: 600px;
+  margin-left: 300px;
+}
+.video-title {
+  text-align: center;
+  line-height: 25px;
+}
+.video-title h1 {
+  font-size: 34px;
+}
+/*----------------------------------------
+     copa america final area style
+------------------------------------------ */
+.copa-america-final {
+  margin-bottom: 150px;
+  width: 900px;
+  height: 305px;
+  position: relative;
+}
+.final-team img {
+  width: 60%;
+  height: 80%;
+  margin-left: 335px;
+}
+.match-year h1 {
+  font-size: 34px;
+}
+.match-year {
+  line-height: 25px;
+  text-align: center;
+}
+.final-team-detail {
+  position: absolute;
+  width: 540px;
+  height: 305px;
+  top: 0%;
+  margin-left: 335px;
+  display: none;
+  text-align: center;
+}
+.copa-america-final:hover .final-team-detail {
+  display: block;
+  background-color: rgba(134, 253, 253, 0.397);
+  color: rgb(1, 17, 85);
+}
 
-/* football logo style */
+/*--------------------------------
+       football logo style
+---------------------------------- */
 .football-logo {
   text-align: center;
 }
@@ -142,7 +205,100 @@ header {
   margin: 6px;
 }
 
-/* Footer area */
+/*-------------------------
+       Footer area
+ ------------------------- */
 footer p {
   text-align: center;
+}
+
+/*--------------------
+     media queries 
+  --------------------*/
+/* mobile devices */
+
+@media only screen and (max-width: 688px) {
+  header {
+    width: 75em;
+    height: 50em;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bannar-area {
+    flex-direction: column;
+  }
+  .player-width {
+    margin-top: 6em;
+  }
+  .players,
+  .player {
+    margin-right: 50px;
+  }
+  .football-match-area,
+  .football-match-detail,
+  .football-match {
+    margin-right: 50px;
+  }
+  .video-title {
+    width: 500px;
+    margin-left: 22em;
+  }
+  .match-year {
+    width: 500px;
+    margin-left: 22em;
+  }
+  .logo {
+    text-align: center;
+    margin-left: 270px;
+    width: 40em;
+  }
+  .social-icon {
+    margin-left: 350px;
+    width: 500px;
+  }
+  footer p {
+    margin-left: 350px;
+    width: 500px;
+  }
+}
+
+/*-----------------
+    tablet device
+ ------------------ */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  header {
+    width: 72em;
+  }
+  .players,
+  .player {
+    width: 15em;
+    margin-right: 50px;
+  }
+  .football-match-area,
+  .football-match-detail,
+  .football-match {
+    margin-right: 100px;
+  }
+
+  .video-title {
+    width: 490px;
+    margin-left: 22em;
+  }
+  .match-year {
+    width: 500px;
+    margin-left: 22em;
+  }
+  .logo {
+    text-align: center;
+    margin-left: 270px;
+    width: 40em;
+  }
+  .social-icon {
+    margin-left: 350px;
+    width: 500px;
+  }
+  footer p {
+    margin-left: 350px;
+    width: 500px;
+  }
 }
